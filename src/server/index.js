@@ -9,7 +9,7 @@ const { text } = require('body-parser')
 
 dotenv.config();
 
-const PORT = 8081 | process.env.PORT
+const PORT = 8081 
 
 const app = express()
 
@@ -26,12 +26,12 @@ app.get('/', function (req, res) {
 })
 
 // a route that handling post request for new URL that coming from the frontend
-console.log(`Your API key is ${process.env.API_KEY}`);
+console.log(`Your API key is 671ef6a2fc4d1cf4697d7483ca3d791c`);
 app.post('/add-url', function (req, res) {
     console.log(req.body)
     const articleURL=req.body.url
     axios.get(
-        `https://api.meaningcloud.com/sentiment-2.1?key=${process.env.API_KEY}&lang=en&of=json&url=${articleURL}`)
+        `https://api.meaningcloud.com/sentiment-2.1?key=671ef6a2fc4d1cf4697d7483ca3d791c&lang=en&of=json&url=${articleURL}`)
        
               // Print data
               .then(response => {
