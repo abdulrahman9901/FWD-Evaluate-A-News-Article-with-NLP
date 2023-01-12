@@ -9,7 +9,7 @@ const { text } = require('body-parser')
 
 dotenv.config();
 
-const PORT = 8081
+const PORT = 8081 | process.env.PORT
 
 const app = express()
 
