@@ -24,7 +24,7 @@ const postData = async ( url = '', data = {})=>{
 
 
 const handleSubmit =async (event) => {
-    const serverUrl="http://localhost:8081/add-url"
+    const serverUrl="https://evaluate-a-news-article-with-nlp.onrender.com/add-url"
 
    event.preventDefault()
      // check what text was put into the form field
