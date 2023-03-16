@@ -28,3 +28,6 @@ npm run start
 ```
 that will start the app at port 8081
 so you can access the tool from the Url : http://localhost:8081
+
+## Live link 
+https://evaluate-a-news-article-with-nlp.onrender.com
